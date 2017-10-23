@@ -8,8 +8,9 @@ Level5:     bandit5     koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 Level6:     bandit6     DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 Level7:     bandit7     HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 Level8:     bandit8     cvX2JJa4CFALtqS87jk27qwqGhBM9plV
-Level9:     bandit9     UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR [sort data.txt | uniq -u]
-Level10:    bandit10    truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk [strings data.txt | grep '=']
-Level11:    bandit11    IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR [base64 -d data.txt]
-Level12:    bandit12    
-                        
+Level9:     bandit9     UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR  [sort data.txt | uniq -u]
+Level10:    bandit10    truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk  [strings data.txt | grep '=']
+Level11:    bandit11    IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR  [base64 -d data.txt]
+Level12:    bandit12    5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu  [tr '[A-Za-z]' '[N-ZA-Mn-za-m]']
+Level13:    bandit13    8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+Level14:    bandit14
