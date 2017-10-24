@@ -13,5 +13,6 @@ Level10:    bandit10    truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk  [strings data.txt | gr
 Level11:    bandit11    IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR  [base64 -d data.txt]
 Level12:    bandit12    5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu  [tr '[A-Za-z]' '[N-ZA-Mn-za-m]']
 Level13:    bandit13    8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
-Level14:    bandit14    4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
-Level15:    bandit15        
+Level14:    bandit14    4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e  
+Level15:    bandit15    BfMYroe26WYalil77FoDi9qh59eK5xNr  [nc localhost 30000 < /etc/bandit_pass/bandit14]
+Level16:    bandit16    
