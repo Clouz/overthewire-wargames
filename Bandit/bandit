@@ -18,5 +18,7 @@ Level15:    bandit15    BfMYroe26WYalil77FoDi9qh59eK5xNr  [nc localhost 30000 < 
 Level16:    bandit16    cluFn7wTiGryunymYOu4RcffSxQluehd  [openssl s_client -connect localhost:30001 -ign_eof]
 Level17:    bandit17    xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn  
 Level18:    bandit18    kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd  [diff passwords.old passwords.new]
-Level19:    bandit19        
+Level19:    bandit19    IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x  [scp -P 2220 bandit18@bandit.labs.overthewire.org:/home/bandi t18/readme /home/]
+Level20:    bandit20    
+
 
