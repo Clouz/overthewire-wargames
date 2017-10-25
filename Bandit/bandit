@@ -17,4 +17,6 @@ Level14:    bandit14    4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
 Level15:    bandit15    BfMYroe26WYalil77FoDi9qh59eK5xNr  [nc localhost 30000 < /etc/bandit_pass/bandit14]
 Level16:    bandit16    cluFn7wTiGryunymYOu4RcffSxQluehd  [openssl s_client -connect localhost:30001 -ign_eof]
 Level17:    bandit17    xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn  
+Level18:    bandit18    kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd  [diff passwords.old passwords.new]
+Level19:    bandit19        
 
