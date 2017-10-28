@@ -24,5 +24,5 @@ Level21:    bandit21    gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr  [nc -l 2020]
 Level22:    bandit22    Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI    
 Level23:    bandit23    jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n  [echo I am user bandit23 | md5sum | cut -d ' ' -f 1] [cat /tmp/8ca319486bfbbc3663ea0fbe81326349]
 Level24:    bandit24    UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ   
-Level25:    bandit25    
+Level25:    bandit25    uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG  [./bandit25.sh | nc localhost 30002 | grep -v Wrong!]
 Level26:    bandit26    
