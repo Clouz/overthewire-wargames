@@ -22,7 +22,7 @@ Level19:    bandit19    IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x  [scp -P 2220 bandit18@
 Level20:    bandit20    GbKksEFF4yrVs6il55v6gwY5aVje5f0j  [./bandit20-do cat /etc/bandit_pass/bandit20]
 Level21:    bandit21    gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr  [nc -l 2020]
 Level22:    bandit22    Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI    
-Level23:    bandit23    
+Level23:    bandit23    jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n  [echo I am user bandit23 | md5sum | cut -d ' ' -f 1] [cat /tmp/8ca319486bfbbc3663ea0fbe81326349]
 Level24:    bandit24    
 Level25:    bandit25    
 Level26:    bandit26    
