@@ -6,8 +6,8 @@ Level2: natas2: ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
 Level3: natas3: sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
 Level4: natas4: Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ  
 Level5: natas5: iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq        [curl -u natas4:Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ -H "Referer: http://natas5.natas.labs.overthewire.org/" http://natas4.natas.labs.overthewire.org/index.php]
-Level6: natas6  
-Level7: natas7  
+Level6: natas6: aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1        [curl -u natas5:iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq --cookie "loggedin=1"  http://natas5.natas.labs.overthewire.org/]
+Level7: natas7:   
 Level8: natas8  
 Level9: natas9  
 Level10: natas10  
