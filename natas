@@ -11,7 +11,7 @@ Level7: natas7:         7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
 Level8: natas8:         DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe        [index.php?page=../../../../../../../../../../etc/natas_webpass/natas8]   
 Level9: natas9:         W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl        [function decodeSecret($secret) {return base64_decode(strrev(hex2bin($secret)));}]
 Level10: natas10:       nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu        [* | cat /etc/natas_webpass/natas10]
-Level11: natas11 
-Level12: natas12 
-Level13: natas13 
+Level11: natas11:       U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK        [-v * /etc/natas_webpass/natas11 #]
+Level12: natas12: 
+Level13: natas13 :
         
