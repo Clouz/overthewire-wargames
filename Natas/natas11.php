@@ -10,10 +10,21 @@ $decoded = json_encode($defaultdata);
 echo $encoded."\n";
 echo $decoded."\n";
 
+echo "\n\n---\n\n";
 
-function xor_encrypt2($en, $de) {
-    $key = $en;
-    $text = $de;
+$testoInChiaro = "Nella vecchia fattoria";
+$risultato = xor_encrypt2("abc", $testoInChiaro);
+$chiave = xor_encrypt2($testoInChiaro , $risultato);
+echo $testoInChiaro."\n";
+echo $risultato."\n";
+echo $chiave."\n";
+
+
+echo "\n\n---\n\n";
+
+function xor_encrypt2($k, $te) {
+    $key = $k;
+    $text = $te;
     $outText = '';
     
     // Iterate through each character
@@ -26,6 +37,8 @@ function xor_encrypt2($en, $de) {
 $key = xor_encrypt2($encoded, $decoded)."\n\n\n";
 echo $key;
 
+$key2 = "qw8J";
+
 function xor_encrypt($in, $k) {
     $key = $k;
     $text = $in;
@@ -37,7 +50,12 @@ function xor_encrypt($in, $k) {
     return $outText;
 }
 
-$test = base64_encode(xor_encrypt(json_encode($defaultdata), $key));
+$test = base64_encode(xor_encrypt(json_encode($defaultdata), $key2));
+$tempdata = json_decode(xor_encrypt2(base64_decode($final), $key2), true);
+
+echo base64_decode($test)."-base64-\n";
+echo xor_encrypt2(base64_decode($test), $key2)."-xor-\n";
+echo $tempdata."-json-\n";
 
 echo $final."\n";
 echo $test."\n";
