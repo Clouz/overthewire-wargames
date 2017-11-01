@@ -1,6 +1,4 @@
-http://natas0.natas.labs.overthewire.org
-
-Level0: natas0  natas0
+Level0: natas0:         natas0                                  http://natas0.natas.labs.overthewire.org
 Level1: natas1:         gtVrDuiDfck831PqWsLEZy5gyDz1clto
 Level2: natas2:         ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
 Level3: natas3:         sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
@@ -13,5 +11,26 @@ Level9: natas9:         W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl        [function decode
 Level10: natas10:       nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu        [* | cat /etc/natas_webpass/natas10]
 Level11: natas11:       U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK        [-v * /etc/natas_webpass/natas11 #]
 Level12: natas12:       EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3        [natas11.php]
-Level13: natas13 :
+Level13: natas13:       jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY        [natas12.bash]
+Level14: natas14:
+Level15: natas15:
+Level16: natas16:
+Level17: natas17:
+Level18: natas18:
+Level19: natas19:
+Level20: natas20:
+Level21: natas21:
+Level22: natas22:
+Level23: natas23:
+Level24: natas24:
+Level25: natas25:
+Level26: natas26:
+Level27: natas27:
+Level28: natas28:
+Level29: natas29:
+Level30: natas30:
+Level31: natas31:
+Level32: natas32:
+Level33: natas33:
+
         
