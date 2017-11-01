@@ -1,5 +1,5 @@
-<?
-
+<?php
+echo "ciao";
 
 $defaultdata = array( "showpassword"=>"no", "bgcolor"=>"#ffffff");
 $final = "ClVLIh4ASCsCBE8lAxMacFMZV2hdVVotEhhUJQNVAmhSEV4sFxFeaAw%3D";
