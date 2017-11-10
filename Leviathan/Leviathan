@@ -1,0 +1,3 @@
+ssh -p 2223 leviathan0@leviathan.labs.overthewire.org
+
+Level1 rioGegei8m [cat ./bookmarks.html | grep pas]
