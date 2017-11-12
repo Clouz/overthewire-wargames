@@ -10,26 +10,29 @@ import (
 func main() {
 
 	pass := ""
-	for {
-		error := false
+	c := 0
+	error := false
 
-		for _, abc := range arr {
+	for {
+
+		for i, abc := range arr {
 			fmt.Print(abc)
 			if result(pass + abc) {
 				pass = pass + abc
 				fmt.Print("\n", len(pass), "\t", pass, "\n\n")
 				break
 			}
-			if abc == "z" {
-				error = true
-				break
+			if i == len(abc)-1 {
+				c++
+				if c > 1 {
+					error = true
+				}
 			}
 		}
 
 		if error {
 			break
 		}
-
 	}
 
 	fmt.Println("\nLa password è: ", pass)
