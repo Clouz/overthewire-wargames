@@ -12,7 +12,9 @@ import (
 func main() {
 	max := 640
 	for index := 0; index < max; index++ {
-		result(strconv.Itoa(index))
+		if result(strconv.Itoa(index)) {
+			break
+		}
 	}
 }
 
