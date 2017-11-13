@@ -12,10 +12,18 @@ func main() {
 	pass := ""
 	c := 0
 	error := false
+	newStri  := []string{}
+
+	// Verifico i caratteri contenuti nella stringa
+	for _, abc := range arr {
+		if result("%"+abc) {
+			newStri = append(newStri, abc)
+			fmt.Print(abc)
+		}
+	}
 
 	for {
-
-		for i, abc := range arr {
+		for i, abc := range newStri {
 			fmt.Print(abc)
 			if result(pass + abc) {
 				pass = pass + abc
@@ -59,7 +67,6 @@ func result(pass string) bool {
 		buf := new(bytes.Buffer)
 		buf.ReadFrom(res.Body)
 		bs := buf.String()
-
 		fmt.Println(bs)
 	*/
 
