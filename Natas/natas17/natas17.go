@@ -22,6 +22,8 @@ func main() {
 		}
 	}
 
+	fmt.Println()
+
 	for {
 		for i, abc := range newStri {
 			fmt.Print(abc)
@@ -30,7 +32,7 @@ func main() {
 				fmt.Print("\n", len(pass), "\t", pass, "\n\n")
 				break
 			}
-			if i == len(abc)-1 {
+			if i == len(newStri)-1 {
 				c++
 				if c > 1 {
 					error = true
