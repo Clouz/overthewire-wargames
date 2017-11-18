@@ -59,7 +59,7 @@ func result(pass string) bool {
 			fmt.Println(string(hx))
 		}
 	}
-	fmt.Print(pass, " ")
+	//fmt.Print(pass, " ")
 
 	if strings.Contains(bs, "You are an admin") {
 		fmt.Println(bs)
