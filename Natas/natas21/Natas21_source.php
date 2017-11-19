@@ -30,9 +30,9 @@ $form .= '<form action="index.php" method="POST">';
 foreach($validkeys as $key => $defval) { 
     $val = $defval; 
     if(array_key_exists($key, $_SESSION)) { 
-    $val = $_SESSION[$key]; 
+        $val = $_SESSION[$key]; 
     } else { 
-    $_SESSION[$key] = $val; 
+        $_SESSION[$key] = $val; 
     } 
     $form .= "$key: <input name='$key' value='$val' /><br>"; 
 } 
