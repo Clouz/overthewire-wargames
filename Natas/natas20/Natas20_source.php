@@ -79,7 +79,7 @@ function mywrite($sid, $data) {
     ksort($_SESSION);
     foreach($_SESSION as $key => $value) {
         debug("$key => $value");
-        $data .= "$key $value\n";
+        $data .= "$key $value   ";
     }
     file_put_contents($filename, $data);
     chmod($filename, 0600);
