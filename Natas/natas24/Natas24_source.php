@@ -7,9 +7,9 @@
 <script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"></script>
 <script src="http://natas.labs.overthewire.org/js/jquery-ui.js"></script>
 <script src="http://natas.labs.overthewire.org/js/wechall-data.js"></script><script src="http://natas.labs.overthewire.org/js/wechall.js"></script>
-<script>var wechallinfo = { "level": "natas23", "pass": "<censored>" };</script></head>
+<script>var wechallinfo = { "level": "natas24", "pass": "<censored>" };</script></head>
 <body>
-<h1>natas23</h1>
+<h1>natas24</h1>
 <div id="content">
 
 Password:
@@ -20,9 +20,9 @@ Password:
 
 <?php
     if(array_key_exists("passwd",$_REQUEST)){
-        if(strstr($_REQUEST["passwd"],"iloveyou") && ($_REQUEST["passwd"] > 10 )){
+        if(!strcmp($_REQUEST["passwd"],"<censored>")){
             echo "<br>The credentials for the next level are:<br>";
-            echo "<pre>Username: natas24 Password: <censored></pre>";
+            echo "<pre>Username: natas25 Password: <censored></pre>";
         }
         else{
             echo "<br>Wrong!<br>";
