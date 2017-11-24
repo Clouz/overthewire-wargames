@@ -10,18 +10,14 @@ import (
 
 func main() {
 
-	//si riesce ad attraversare le cartelle sfruttando il trava sostiusci
-	//si ignetta la richiesta nell'user agent che non viene controllato ma salvato nel log
-	result("?lang=en")
-	fmt.Println("---------------------")
-	result("?lang=.../...//logs/natas25_Clouz.log")
+	result("?")
 }
 
 func result(xx string) bool {
 
-	usr := "natas25"
-	psw := "GHF6X7YwACaYYssHVY05cFq83hRktl4c"
-	baseURL := "http://natas25.natas.labs.overthewire.org/"
+	usr := "natas26"
+	psw := "oGgWAJ7zcGT28vYazGo4rkhOPDhBu34T"
+	baseURL := "http://natas26.natas.labs.overthewire.org/"
 
 	query := xx
 
