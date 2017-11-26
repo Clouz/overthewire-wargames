@@ -12,7 +12,10 @@ import (
 func main() {
 
 	//Opject Injection, creo se serializzo un oggetto della classe Logger
-	//presente nel codice sorgente
+	//presente nel codice sorgente riscrivendo totalmente il contenuto
+	//in modo tale che una volta che viene chiamato il distruttore
+	//della classe esegua i comandi desiderati
+
 	result("?x1=1&y1=1&x2=300&y2=300")
 	result("img/natas26_Clouz3.php")
 }
