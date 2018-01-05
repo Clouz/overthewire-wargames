@@ -3,4 +3,9 @@
 Level1  rioGegei8m  [cat ./bookmarks.html | grep pas]
 level2  ougahZi8Ta  [ltrace ./check; sex; cat /etc/leviathan_pass/leviathan2]
 level3  Ahdiemoo1j  [utilizzando ltrace si può notare che system() chiamando cat non utilizza le virgolette quindi si può sfuttare questa vulnerabiltà per superare access()]
+level4  vuH0coox6m  [utilizzando ltrace si nota che effettua un strcmp con snlprintf\n, utilizzando quindi come password snlprintf si ottiene la shell di leviathan4]
+level5
+level6
+level7
+level8
 
