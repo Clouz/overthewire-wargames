@@ -6,6 +6,6 @@ level3  Ahdiemoo1j  [utilizzando ltrace si può notare che system() chiamando ca
 level4  vuH0coox6m  [utilizzando ltrace si nota che effettua un strcmp con snlprintf\n, utilizzando quindi come password snlprintf si ottiene la shell di leviathan4]
 level5  Tith4cokei  [il programma restituisce la password in binario, utilizzando un convertitore binascio to ascii si trova la password]
 level6  UgaoFee4li  [creo un link simbolico alla password nella posizione /tmp/file.log che poi viene letto dal programma restituendomi la password]
-level7  
+level7  ahy7MaeBo9  [utilizzando radare2 leggo l`assembly e recupero la password 7123]
 level8  
 
