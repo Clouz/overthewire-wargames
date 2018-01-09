@@ -1,0 +1,9 @@
+    ssh -p 2222 krypton@krypton.labs.overthewire.org
+
+Level1  KRYPTONISGREAT  [echo "S1JZUFRPTklTR1JFQVQ=" | base64 -d]
+level2  ROTTEN [rot13 decode]
+level3  
+level4  
+level5  
+level6  
+
