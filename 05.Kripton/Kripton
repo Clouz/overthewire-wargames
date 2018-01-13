@@ -4,5 +4,5 @@ Level1  KRYPTONISGREAT  [echo "S1JZUFRPTklTR1JFQVQ=" | base64 -d]
 level2  ROTTEN [rot13 decode]
 level3  CAESARISEASY [shift di 12]
 level4  BRUTE [WELLDONETHELEVELFOURPASSWORDISBRUTE]
-level5  
-level6
+level5  CLEARTEXT [FREKEY]
+level6  
